@@ -5,6 +5,6 @@ if (selection === 'eat'){
   message = 'Eating cakes is fun!';
 } else if (selection === 'bake'){
   message = 'Baking cakes is fun!';
-} else {message = 'Try our cakes for fun'}
+} else {message = 'Try our cakes for fun!'}
 
 document.write('<h3>' + message + '</h3>');
