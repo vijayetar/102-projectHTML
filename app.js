@@ -41,19 +41,16 @@ function selectService() {
                 while (numberCakes === '' || isNaN(numberCakes)) {
                 var numberCakes = prompt('Great, how many cakes would you like to order? PLEASE enter a number');
                 }
-            return numberCakes;    
-            msgClasses = 'You ordered' + numberCakes + 'today' + '!';
-        } else {
-            msgClasses = 'Thank you for visiting our site!';
+            cartoonCake();    
+            } else {
+                msgClasses = 'Thank you for visiting our site!';
+            return '<h3>' + msgClasses + '!' + '</h3>';
+            }
         }
     }
-    return '<p>' + msgClasses + '!' + '</p>';
-}
-
-function getCartoon() {
-    var cartoon = '<img src="images/cartoon_cake.png">';
-    for (var i = 0; i < numberCakes; i++) {
-        result = result + '<p id = "cartoon"> Cake no.' + (i + 1) + '' + cartoon + '</p>';
+    function cartoonCake() {
+        for (var i = 0; i < numberCakes; i++) {
+        var cartoon = '<img src="images/cartoon_cake.png">';
+        return cartoon;
+        }
     }
-    return '<p>' + 'You ordered' + '' + numberCakes + '' + 'cakes! ' + '</p>';
-}
