@@ -72,9 +72,9 @@ body > main > section > p {
     position: relative;
     width: 1200px;
     padding: 5px;
-    margin-left: 305px;
     align-content: center;
 }
+
 /* Image Styles in Body */
 
 body > main >ul > li > figure> a > img {

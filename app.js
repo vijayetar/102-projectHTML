@@ -14,7 +14,6 @@ function askName() {
         greeting = 'Welcome,';
     }
     return '<h3>' + greeting + name + '!' + '</h3>';
-
 }
 function choiceCakes() {
     var selection = prompt('Do you like to eat or bake cakes?');
@@ -24,7 +23,39 @@ function choiceCakes() {
         message = 'Eating cakes is fun!';
     } else if (selection === 'bake') {
         message = 'Baking cakes is fun!';
-    } else { message = 'Try our cakes for fun!' }
-
+    } else {
+        message = 'Try our cakes for fun!';
+    }
     return '<h3>' + message + '</h3>';
+}
+
+function selectService() {
+    var selectCakes = prompt('What cake would you like to order - birthday/wedding/specialty?');
+    var numberCakes = prompt('How many cakes would you like to order?');
+    while (numberCakes === '' || isNaN(numberCakes)) {
+        var numberCakes = prompt('Great, how many cakes would you like to order? PLEASE enter a number');
+    }
+    return numberCakes;
+}
+
+function getCartoon() {
+    var cartoon;
+    cartoon = '<img src="images/cartoon_cake.png">';
+    for (var i = 0; i < numberCakes; i++) {
+        result = result + '<p id = "cartoon">Cake no.' + (i + 1) + '' + cartoon + '</p>';
+    }
+    return '<h3>' + 'You ordered' + '' + numberCakes + '' + 'cakes! ' + '</h3>';
+}
+
+function selectClasses() {
+    var askClasses = prompt('Would you like to check out our classes? (Y/N)');
+    var msgClasses;
+
+    if (askClasses === 'yes' || askClasses === 'Y' || askClasses === 'y') {
+        msgClasses = 'Great! Please click the classes image to check out our pricing';
+    } else {
+        msgClasses = 'Great! Please visit our site any time';
+    }
+    return '<p>' + msgClasses + '</p>';
+}
 }
