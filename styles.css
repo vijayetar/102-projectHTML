@@ -53,7 +53,7 @@ clear: left;
 body {
     margin: 0px auto; 
     width: 1260px; 
-    height: 1500px;
+    height: 2000px;
     background-color: pink;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border: black solid 3px;
@@ -77,19 +77,54 @@ body > main > section > p {
 
 /* Image Styles in Body */
 
-body > main >ul > li > figure> a > img {
-    width: 300px;
-    height: 350px;
-    float: left;
-    position: relative;
-    top: -55px;
-    color: #665544;
-    margin: 15px;
-    padding: 55px;
-    clear: right;
+.BCakes {
+  width: 300px;
+  height: 300px;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 25px;
+  margin-bottom: 5px;
 }
-/* Footer details */
 
+.WCakes {
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 25px;
+    margin-bottom: 5px;
+  }
+
+.SCakes {
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 25px;
+    margin-bottom: 5px;
+    
+}
+.CCakes {
+    
+        width: 300px;
+        height: 300px;
+        margin: 15px;
+        padding: 15px;
+        border-radius: 25px;
+        margin-bottom: 5px;
+        
+    
+}    
+       
+
+/* Footer details */
+footer {
+    float: right;
+    position: relative;
+    right: 150px;
+    top: 355px;
+}
+]
 body> footer> .Reviews {
-    font-size: 16px;
+    font-size: 28px;
 }
