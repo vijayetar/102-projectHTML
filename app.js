@@ -31,11 +31,16 @@ function choiceCakes() {
 
 function selectService() {
     var selectCakes = prompt('What cake would you like to order - birthday/wedding/specialty?');
+    if (selectCake === 'birthday' || selectCake === 'birthday' || selectCake === 'specialty') {
     var numberCakes = prompt('How many cakes would you like to order?');
     while (numberCakes === '' || isNaN(numberCakes)) {
         var numberCakes = prompt('Great, how many cakes would you like to order? PLEASE enter a number');
-    }
     return numberCakes;
+    }
+    else {
+        selectClasses()
+    }
+    
 }
 
 function getCartoon() {
