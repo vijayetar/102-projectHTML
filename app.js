@@ -65,5 +65,5 @@ function cartoonCake() {
     for (var i = 0; i < numberCakes; i++) {
         cartoon = cartoon + image;
     }
-    return 'You ordered ' + numberCakes + cartoon + 'today! Please click image to order them. '
+    return 'You ordered ' + numberCakes + cartoon + 'today! Please click relevant image to order them.';
 }
