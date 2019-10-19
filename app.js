@@ -34,7 +34,7 @@ function choiceCakes() {
 
 function selectService() {
     var askClasses = prompt('Would you like to check out our classes? (Y/N)');
-    var msgClasses = '';
+    var msgClasses;
     if (askClasses === 'yes' || askClasses === 'Y' || askClasses === 'y') {
         msgClasses = 'Great! Please click the classes image to check out our pricing';
         return '<h3>' + msgClasses + '!' + '</h3>';
@@ -45,6 +45,13 @@ function selectService() {
             while (numberCakes === '' || isNaN(numberCakes)) {
                 numberCakes = prompt('Great, how many cakes would you like to order? PLEASE enter a number');
             }
+            var image = '<img src="images/cartoon_cake.png" alt= "">';
+            var cartoon = '';
+            for (var i = 0; i < numberCakes; i++) {
+                cartoon = cartoon + image;
+            }
+            return 'You ordered ' + numberCakes + cartoon + 'today! Please click image to order them. '
+
             cartoonCake();
         } else {
             msgClasses = 'Thank you for visiting our site!';
